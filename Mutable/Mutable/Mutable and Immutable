@@ -1,0 +1,29 @@
+Creating a list which contains name of Indian cities  
+
+cities = [‘Delhi’, ‘Mumbai’, ‘Kolkata’]
+# Printing the elements from the list cities, separated by a comma & space
+
+for city in cities:
+		print(city, end=’, ’)
+
+Output [1]: Delhi, Mumbai, Kolkata
+#Printing the location of the object created in the memory address in hexadecimal format
+
+print(hex(id(cities)))
+
+Output [2]: 0x1691d7de8c8
+#Adding a new city to the list cities
+
+cities.append(‘Chennai’)
+#Printing the elements from the list cities, separated by a comma & space 
+
+for city in cities:
+	print(city, end=’, ’)
+
+Output [3]: Delhi, Mumbai, Kolkata, Chennai
+#Printing the location of the object created in the memory address in hexadecimal format
+
+print(hex(id(cities)))
+
+Output [4]: 0x1691d7de8c8
+The above example shows us that we were able to change the internal state of the object ‘cities’ by adding one more city ‘Chennai’ to it, yet, the memory address of the object did not change. This confirms that we did not create a new object, rather, the same object was changed or mutated. Hence, we can say that the object which is a type of list with reference variable name ‘cities’ is a MUTABLE OBJECT.
